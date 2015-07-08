@@ -34,17 +34,12 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.12.1" % "test"
 )
 
-seq(bintraySettings:_*)
-
 publishMavenStyle := true
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
 scmInfo := Some(ScmInfo(url("https://github.com/scalaz/scalaz-stream"),
   "git@github.com:scalaz/scalaz-stream.git"))
-
-bintray.Keys.packageLabels in bintray.Keys.bintray :=
-  Seq("stream processing", "functional I/O", "iteratees", "functional programming", "scala")
 
 osgiSettings
 
